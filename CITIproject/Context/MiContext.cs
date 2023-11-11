@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CITIproject.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CITIproject.Context
 {
@@ -7,5 +8,8 @@ namespace CITIproject.Context
         public MiContext() { 
             
         }
+
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Ingeniero> Ingenieros { get; set; }
     }
 }
